@@ -1,0 +1,7 @@
+name: BouncyBeds
+version: '${project.version}'
+main: dev.timecoding.bouncybeds.BouncyBeds
+api-version: 1.19
+authors: [ TimeCoding ]
+description: Jump on Beds like on a Slime-Block!
+website: timecoding.de

@@ -1,0 +1,57 @@
+#######################################################################################
+# ██████╗░░█████╗░██╗░░░██╗███╗░░██╗░█████╗░██╗░░░██╗██████╗░███████╗██████╗░░██████╗ #
+# ██╔══██╗██╔══██╗██║░░░██║████╗░██║██╔══██╗╚██╗░██╔╝██╔══██╗██╔════╝██╔══██╗██╔════╝ #
+# ██████╦╝██║░░██║██║░░░██║██╔██╗██║██║░░╚═╝░╚████╔╝░██████╦╝█████╗░░██║░░██║╚█████╗░ #
+# ██╔══██╗██║░░██║██║░░░██║██║╚████║██║░░██╗░░╚██╔╝░░██╔══██╗██╔══╝░░██║░░██║░╚═══██╗ #
+# ██████╦╝╚█████╔╝╚██████╔╝██║░╚███║╚█████╔╝░░░██║░░░██████╦╝███████╗██████╔╝██████╔╝ #
+# ╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═════╝░╚══════╝╚═════╝░╚═════╝░ #
+#######################################################################################
+# Made by TimeCode @ 2023  #
+#    Plugin-Version: 1.0   #
+#       (08.01.2023)       #
+############################################################################################################
+# If you got an error or found a bug (or if you have wishes), join my discord: https://discord.gg/mf9JNrzh #
+############################################################################################################
+
+#Set this to "false" if you want to disable this plugin
+Enabled: true
+
+#Set the jump-high (if a player jumps on a bed)
+#DEFAULT: 5
+JumpHigh: 5
+
+#What's this?: If this option is enabled the JumpHigh will sink every "Decrease.PerTicks"
+Decrease:
+  #Set this to "false" if you want to disable the increase-function
+  #IMPORTANT: If you disable this
+  #If you disable this player could be able to abuse this addon (for example for being AFK)
+  Enabled: true
+  #Set the jump-high which gets removed every "Decrease.PerTicks"
+  RemoveJumpHigh: 1
+  #Set the ticks for "Decrease.RemoveJumpHigh"
+  #20 Ticks = 1 second
+  PerTicks: 20
+
+#Set the fallhigh which is need for a
+FallHigh:
+  #Change this to "false" if you want to disable it
+  Enabled: true
+  #Type in the fallhigh in blocks (amount)
+  InBlocks: 2
+
+Delay:
+  #Change this to "true" if you want to customize a custom delay after a player leaved the "Bouncy-"Bed
+  Enabled: false
+  #Change the delay in ticks
+  #20 Ticks = 1 second
+  DelayInTicks: 20
+  #Set this to "false" if the player mustn't leave the bed before he can get the "BounceBoost" again
+  MustLeaveBed: true
+
+#"bStats is a free and open source website that helps the developer to collect usage data from his plugin" (Source: bstats.org)
+#If you don't want to send me automatic statistics, disable this with changing it to "false"
+bStats: true
+
+#DO NOT CHANGE THIS
+#AFTER CHANGING THIS THE WHOLE CONFIG WILL BE RESETTET
+config-version: 1.0.1
